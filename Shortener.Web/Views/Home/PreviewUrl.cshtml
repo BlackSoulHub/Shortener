@@ -1,0 +1,12 @@
+@model Shortener.Web.Models.Home.PreviewUrlModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Предпросмотр ссылки</h2>
+<h3>ID: @Model.Id</h3>
+<h3>Origin URL: <a href="@Model.LongUrl">@Model.LongUrl</a></h3>
+<h3>Short URL: <a href="@Model.ShortUrl">@Model.ShortUrl</a></h3>
+<h3>Created At: @Model.CreateDate</h3>

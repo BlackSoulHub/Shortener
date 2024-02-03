@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <form method="post" asp-action="Index">
+        <input placeholder="http://google.com" name="url"/>
+        <button type="submit">Сократить ссылку</button>
+    </form>
+</div>
